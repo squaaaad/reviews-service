@@ -13,10 +13,9 @@ export default class ReviewsListEntry extends React.Component {
   flagReview() {
     //display modal to collect info
     //this.props.onFlagReview(this.props.review._id);
-    let flagInfo = {id: this.props.review._id}
+    let flagInfo = {id: this.props.review.review_id}
     console.log('flagged review', flagInfo);
   }
-
 
 
   render () {
@@ -37,21 +36,22 @@ export default class ReviewsListEntry extends React.Component {
               <div id="review-item-username-left-boundary" className={styles.usernameLeftBoundary} >
                 <div id="review-item-username" className={styles.username}>
                   <h3>
-                    <span>{this.props.review.user}</span>
+                    <span>{this.props.review.author_name}</span>
                   </h3>
                 </div>
                 <div id="review-item-date" className={styles.date}>
-                  <span>{this.props.review.date}</span>
+                  <span>{this.props.review.relative_time_description}</span>
                 </div>
               </div> 
             </div>
-            <UserPhoto id="review-item-user-photo" className={styles.userPhoto} />
+            <UserPhoto id="review-item-user-photo" className={styles.userPhoto} name={this.props.review.author_name} photo={this.props.review.profile_photo_url}/>
           </div>
           
         </div>
-        <TextParagraph content={this.props.review.comment} id="review-item-comment" className={styles.comment}/>
+        <TextParagraph content={this.props.review.text} id="review-item-comment" className={styles.comment}/>
         <hr id="review-item-hr" className={styles.hr} />
       </div>
     );
   }
 }
+        // <TextParagraph content={this.props.review.comment} id="review-item-comment" className={styles.comment}/>

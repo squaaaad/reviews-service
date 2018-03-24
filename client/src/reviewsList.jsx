@@ -14,7 +14,7 @@ export default class ReviewsList extends React.Component {
 
     return (
       <div id="reviewlist">
-            {_.map(this.props.reviews, (review, i) => (<ReviewListEntry review={review} key={review._id} onFlagReview={this.props.onFlagReview} />))}
+            {_.map(this.props.reviews, (review, i) => (<ReviewListEntry review={review} key={review.review_id} onFlagReview={this.props.onFlagReview} />))}
       </div>
     );
   }

@@ -1,9 +1,9 @@
 //mongoDB interface
 const mongo = require('mongoose');
-const _ = require('lodash');
+// const _ = require('lodash');
 
 const connect = () => {
-    let mongoURI = process.env.DATABASE || 'mongodb://127.0.0.1/reviews'; 
+    let mongoURI = process.env.DATABASE || 'mongodb://127.0.0.1/zagat'; 
     console.log('connecting to', mongoURI);
     return mongo.connect(mongoURI)
     .then(() => (console.log('connected to database')))
@@ -11,42 +11,58 @@ const connect = () => {
       console.log(err)
       return err;
     });
-    
 };
 
+{/*
+  const reviewAttributeSchema = {
+    userImg: String,
+    user: String,
+    date: String,
+    comment: String
+  };
+
+  const aggregateReviewSchema = {
+    name: String,
+    rating: Number
+  };
+
+  const reviewSchema = {
+    id: String,
+    aggregateReviews: [aggregateReviewSchema],
+    averageRating: Number,
+    ratingAccuracyDesc: Number,
+    ratingCommunication: Number,
+    ratingCleanliness: Number,
+    ratingLocation: Number,
+    ratingCheckIn: Number,
+    ratingValue: Number,
+    reviews: [reviewAttributeSchema]
+  };
+
+  const reviewAttributes = {
+    userImg: 'string',
+    user: 'string',
+    date: 'string',
+    comment: 'string'
+  };
+*/}
 
 const reviewAttributeSchema = {
-  userImg: String,
-  user: String,
-  date: String,
-  comment: String
-};
-
-const aggregateReviewSchema = {
-  name: String,
-  rating: Number
-};
+  "author_name": String, 
+  "author_url": String,
+  "language": String,
+  "profile_photo_url": String,
+  "rating": Number,
+  "relative_time_description": String,
+  "text": String,
+  "time": Number,
+}
 
 const reviewSchema = {
-  id: Number,
-  aggregateReviews: [aggregateReviewSchema],
-  averageRating: Number,
-  ratingAccuracyDesc: Number,
-  ratingCommunication: Number,
-  ratingCleanliness: Number,
-  ratingLocation: Number,
-  ratingCheckIn: Number,
-  ratingValue: Number,
-  reviews: [reviewAttributeSchema]
-};
-
-const reviewAttributes = {
-  userImg: 'string',
-  user: 'string',
-  date: 'string',
-  comment: 'string'
-};
-
+  "_id": Number,
+  "rating": Number,
+  "reviews": [reviewAttributeSchema],
+}
 
 let validateReview = (review) => {
   for (var key in reviewAttributes) {
@@ -60,10 +76,11 @@ let validateReview = (review) => {
 };
 
 let Review = mongo.model('Review', reviewSchema);
+// let Review = mongo.model('review'); // test
 
-let filterValidReviews = (reviews) => {
-  return _.filter(reviews, validateReview);
-};
+// let filterValidReviews = (reviews) => {
+//   return _.filter(reviews, validateReview);
+// };
 
 const isValidReviewId = async (id, checkDB) => {
   //console.log(isNaN(id));
@@ -91,7 +108,7 @@ const saveReview = (id, reviewObj) => {
 };
 
 const getAllReviews = (id) => {
-  return Review.findOne({id: id}).exec();
+  return Review.findOne({_id: id * 1}).exec();
 }
 
 const disconnect = () => {

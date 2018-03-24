@@ -17,82 +17,95 @@ export default class Reviews extends React.Component {
       pagesize: 10,
       currentPage: 0,
       reviews: [{
-        _id: 1,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome! super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain.  '
+        review_id: 1,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome! super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain. super super awesome and it takes a million words to explain.  '
       },
       {
-        _id: 2,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 2,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 3,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 3,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 4,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 4,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 5,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 5,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 6,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 6,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 7,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 7,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 8,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 8,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 9,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 9,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 10,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 10,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 11,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 11,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 12,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 12,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       },
       {
-        _id: 13,
-        user:'jill',
-        date:'Feb 2013',
-        comment:'it was awesome!'
+        review_id: 13,
+        author_name:'jill',
+        profile_photo_url: 'https://cdn.iconscout.com/public/images/icon/free/png-512/avatar-user-teacher-312a499a08079a12-512x512.png',
+        time:'Feb 2013',
+        text:'it was awesome!'
       }],
       filterTerms: null,
       overallRating: 4,
@@ -133,15 +146,15 @@ export default class Reviews extends React.Component {
     if (id === null) {
       return;
     }
-    axios.get('/reviews/' + id )
+    axios.get('/restaurants/' + id + '/reviews')
     .then((response) => {
-      //console.log(response);
+      // console.log(response.data.reviews);
       this.setState({
         item: id,
         currentPage: 0,
         reviews: response.data.reviews,
-        aggregateReviews: response.data.aggregateReviews,
-        overallRating: response.data.averageRating
+        // aggregateReviews: response.data.aggregateReviews,
+        overallRating: response.data.rating
       });
     })
     .then(() => {
@@ -157,6 +170,7 @@ export default class Reviews extends React.Component {
 
   getIdFromUrl() {
     let id = window.location.pathname.split('/')[1];
+    // console.log('getIdFromUrl in app returned id as: ', id);
     return id !== '' ? id : '1';
   }
 
@@ -175,7 +189,7 @@ export default class Reviews extends React.Component {
     let lastReview = (this.state.currentPage + 1) * this.state.pagesize;
     //console.log('rendering reviews page', this.state.currentPage, ':', this.state.currentPage * this.state.pagesize, 'to', (lastReview > this.state.reviews.length) === true ? this.state.reviews.length: lastReview);
     let reviews =  this.filterReviews().slice(this.state.currentPage * this.state.pagesize, (lastReview > this.state.reviews.length) === true ? this.state.reviews.length: lastReview);
-    //console.log(reviews);
+
     return reviews;
   }
 
@@ -204,7 +218,9 @@ export default class Reviews extends React.Component {
         <ReviewsHeader overallRating={this.state.overallRating} reviews={this.state.reviews.length} searchTerms={this.state.filterTerms} submitQuery={this.searchReviews} />
         </div>
         <div>
+          {/*
           <ReviewAggregates aggregateReviews={this.state.aggregateReviews} />
+          */}
           <ReviewList reviews={this.paginatedReviews()} onFlagReview={this.onFlagReview} />
         </div>
        {this.shouldPaginateReviews() ? <ReviewListPages currentPage={this.state.currentPage} pages={Math.ceil(this.state.reviews.length / this.state.pagesize)} changePage={this.changePage} /> : null}

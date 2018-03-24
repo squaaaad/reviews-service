@@ -3,9 +3,16 @@
 	width: 100px;
 }
 
-.star {
+.filledStar {
 	height: 100%;
 	width: 20%;
 	display: inline-block;
 	fill: currentColor;
+}
+
+.star {
+	height: 100%;
+	width: 20%;
+	display: inline-block;
+	fill: silver;
 }

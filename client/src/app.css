@@ -1,8 +1,10 @@
 .reviews {
-	font-family: 'Palanquin', sans-serif;
+	font-family: 'Raleway', sans-serif;
 	font-size: 14px;
     line-height: 1.42857143;
     color: #333;
     -webkit-font-smoothing: antialiased;
+    background-color: white;
+    max-width: 900px;
 
 }

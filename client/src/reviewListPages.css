@@ -1,6 +1,6 @@
 .reviewListPages {
-  margin: 10px 20px 10px 20px;
-  width: 100%;
+  margin: 5px 30px 5px 140px;
+  max-width: 900px;
   height: 30px;
 }
 

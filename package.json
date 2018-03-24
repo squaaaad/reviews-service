@@ -17,20 +17,26 @@
     "start": "node db/seedDB-npm.js; webpack; node server/server.js"
   },
   "dependencies": {
+    "Faker": "^0.7.2",
     "axios": "^0.18.0",
     "body-parser": "^1.18.2",
     "css-loader": "^0.28.10",
     "express": "^4.16.2",
+    "faker": "^4.1.0",
     "fs": "0.0.1-security",
     "jquery": "^3.3.1",
     "mongoose": "^5.0.7",
     "morgan": "^1.9.0",
+    "newrelic": "^3.2.0",
+    "npm": "^5.7.1",
     "path": "^0.12.7",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
     "request": "^2.83.0",
+    "stream": "0.0.2",
     "style-loader": "^0.20.2",
-    "webpack": "^3.11.0"
+    "webpack": "^3.11.0",
+    "zlib": "^1.0.5"
   },
   "babel": {
     "presets": [
@@ -44,6 +50,7 @@
     }
   },
   "devDependencies": {
+    "JSONStream": "^1.3.2",
     "babel-core": "^6.26.0",
     "babel-jest": "^22.4.1",
     "babel-loader": "^7.1.2",
@@ -53,9 +60,11 @@
     "eslint-config-hackreactor": "git://github.com/reactorcore/eslint-config-hackreactor",
     "jest": "^22.4.2",
     "jest-cli": "^22.4.2",
+    "mongodb-dataset-generator": "^1.0.0",
     "mongodb-memory-server": "^1.7.0",
     "nodemon": "^1.15.1",
     "react-addons-test-utils": "^15.6.2",
+    "stream-to-mongo-db": "^1.1.0",
     "supertest": "^3.0.0"
   }
 }

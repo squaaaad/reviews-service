@@ -1,6 +1,6 @@
 .reviewsHeader {
   display: block;
-  max-width: 670px;
+  max-width: 900px;
 
 }
 
@@ -17,15 +17,41 @@
 	position: relative;
 	left: 0;
 	display: inline-block;
-	height: 30px;
+	height: 16px;
 	/*border: 10px solid red;*/
 	margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	font-weight: 700 !important;
-	font-size: 28px !important;
-    line-height: 32px !important;
-    letter-spacing: -0.6px !important;
-    color: #484848 !important;
+    font-size: 16px;
+    color: black;
+}
+
+.titleRating {
+	position: relative;
+	left: 0;
+	display: inline-block;
+	height: 16px;
+	/*border: 10px solid red;*/
+	margin: 5px 5px 5px 5px;
+	padding: 0 0 0 0;
+	
+    font-size: 16px;
+    color: #ae002f;
+}
+
+.googleReviews {
+	height: 16px;
+	color: #656666;
+	font-weight: 400px;
+	font-size: 16px;
+	font-variant-caps: normal;
+	font-variant-east-asian: normal;
+	font-variant-ligatures: normal;
+	text-transform: uppercase;
+	letter-spacing: 1.376px;
+	position: relative;
+	display: inline;
+	-webkit-font-smoothing: antialiased;
+
 }
 
 .reviewsCount {
@@ -35,21 +61,21 @@
 .rating {
 	position: relative;
 	display: inline-block;
-	width: 150px;
+	width: 85px;
 	left: 0px;
-	height: 30px;
+	height: 16px;
 	padding: 0 0 0 10px;
 	margin: 0 0 0 0;
 	/*border: 10px solid red;*/
-	color: #008489 !important;
+	color: #ae002f;
 
 }
 
 .starScale {
 	position: relative;
 	display: inline-block;
-	width: 150px;
-	height: 30px;
+	width: 75px;
+	height: 15px;
 	right: 0px;
 	z-index: 5;
 	
@@ -71,7 +97,7 @@
 	position: relative;
 	margin: 20px 20px 20px 20px;
 	padding: 0 0 0 0;
-	width: 100%;
+	max-width: 100%;
 	bottom: 0px;
 
 }

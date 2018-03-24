@@ -14,3 +14,24 @@ videos
 client/public/bundle.js
 
 
+db/cs.mongo
+db/faker.js
+db/sql/
+db/test-zagatReviewsExport_reviews-field.csv
+db/testGeneratedReviews.json
+db/test_zagatReviews_MongoExport_all-fields.csv
+db/test_zagatReviews_MongoExport_id,rating.csv
+hello.yml
+newrelic.js
+newrelic_agent.log
+process.yml
+db/reviews-one-test.csv	
+db/mongoFieldsExport.txt
+db/mongoReviewsFields.txt
+db/mongoReviewsObjectsExport.csv
+db/mongoReviewsObjectsExportTest.csv
+db/old/	
+db/bigData/
+db/mongo-model.js
+artilleryIds.csv
+db/reviews-one-test.csv

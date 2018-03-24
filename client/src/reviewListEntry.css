@@ -1,7 +1,7 @@
 
 .listItem {
 	display: block;
-	max-width: 670px;
+	max-width: 900px;
 
 }
 
@@ -12,8 +12,8 @@
   /*border: 3px solid blue;*/
   overflow: hidden;
   padding: 0 0 0 0;
-  margin: 20px 20px 20px 20px;
-
+  margin: 0px 0px 0px 50px;
+  color: #ae002f;
 
 }
 
@@ -33,8 +33,8 @@
 	position: absolute;
 	left: 0;
 	top: 0;
-	width: 20px;
-	height: 20px;
+	width: 50px;
+	height: 50px;
 	overflow: hidden;
 	/*border: 3px solid yellow;*/
 	background-color: yellow;
@@ -49,7 +49,7 @@
 	overflow: hidden;
 	max-width: 500px;
 	min-width: 200px;
-	height: 100px;
+	height: 50px;
 	/*border: 3px solid red;*/
     margin: 0 0 0 0;
 	padding: 0 0 0 0;
@@ -62,24 +62,23 @@
 	left: 20px;
 	height: 50%;
 	/*border: 3px solid #73AD21;*/
+	color: #101820;
     margin: 0 0 0 0;
 	padding: 0 0 0 0;
-	color: #484848 !important;
-
 
 }
 
 .date {
 	display: block;
 	position: absolute;
-	top: 50%;
+	top: 66%;
 	left: 20px;
 	height:50%;
 	/*border: 3px solid #73AD21;*/
     margin: 0 0 0 0;
 	padding: 0 0 0 0;
-
-	font-size: 15px !important;
+    color: #656666;
+	font-size: 12px !important;
     line-height: 18px !important;
     letter-spacing: 0.2px !important;
     font-weight: 300 !important;
@@ -94,7 +93,7 @@
 	/*border: 3px solid #73AD21;*/
 	max-width: 20px;
 	max-height: 20px;
-    margin: 0 0 0 0;
+    margin: 20px 20px 20px 20px;
 	padding: 0 0 0 0;
 }
 
@@ -110,16 +109,16 @@
 }
 
 .comment {
-	display: inline-block;
+	display: block;
 	text-align: left;
-	margin: 0 20px 0 20px;
-	padding: 0 0 0 0;
-	width: 100%;
-	font-size: 18px;
+	margin: 0 0 0 20px;
+	padding: 0 50px 0 130px;
+	width: 600;
+	font-size: 16px;
 }
 
 .hr {
 	padding: 0 0 0 0;
-	margin: 0 20px 0 20px;
-	width: 100%;
+	margin: 0 5px 0 5px;
+	max-width: 100%;
 }
